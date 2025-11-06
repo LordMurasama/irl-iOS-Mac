@@ -1,48 +1,29 @@
+# IRL-iOS-Mac (forked from: https://github.com/Naginreed/irl-cae_iOS-Mac)
+> Belabox Cloud Setup for iOS (Moblin) and Mac OBS (For Translation)
+> Japanese Translation Branch: (https://github.com/LordMurasama/IRL-iOS-Mac/tree/LordMurasama-patch-1)
+
 # General Info
-This Guide describes a **Cheap and Easy** Solution for
-- better **IRL**-Streaming 
-- **IPhone (iOS)** as Streaming Phone
-- **Mac/Macbook** as Home PC
+This Guide describes a **Low Cost and Easy** Solution for
+- better user viewing experience for **IRL**-Streaming 
+- **iOS** as Streaming Phone
+- **macOS** as Home PC (Mac Intel or Apple Silicon)
 
 > [!NOTE]  
-> There are completely "free" methods, but they need more technical expertise and if wrongly configured could be a security risk for your Home PC.
-> With this Method you don't open up purposely any holes in your Security. *(No fixed IP | No PF | No FW Changes)*
-
-> [!IMPORTANT]  
-> <details>
-> <summary>You can use the 3 Lines at the top right to jump to any Section of the Guide</summary>
-> <img src="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/ddcfa25e-e806-48a7-9882-60fdc8794947">
-> </details>
----
-## Ko-Fi
-<a href="https://ko-fi.com/naginreed"><img src="https://github.com/Naginreed/irl-cae-setup-ioS/assets/71943093/29446800-fcff-4170-9ee0-7fec375ddfd8" alt="Naginreed Ko-Fi" height="60"></a><br> [Wanna help me out?](https://ko-fi.com/naginreed)
+> There are completely "free" methods, but they require more technical expertise and if wrongly configured, could be a security risk for your Mac.
+> With this method, you don't purposely open any holes in your network and system security. *(No fixed IP | No Port Forwarding | No Firewall Changes)*.
+> Additional security/privacy details here: (https://techdump.murasama.net/2024/06/30/naginreeds-moblin-to-twitch-guide/#security-and-privacy)
 
 ---
 ## Map
 
 <img src="https://github.com/Naginreed/irl-cae_iOS-Mac/assets/71943093/c420ab6e-570c-47de-950a-c08653ec5847">
 
-> [!NOTE]  
-> At first this looks pretty complicated, but we will go Step-by-Step with Pictures *(when available)* trough the whole Setup Process.
-
-**Positives**  
-
-- 👍 can be used with a single Internet connection from Phone
-- 👍 when connection from Phone is failing, the Viewer will still see Videos/Clips (1x Stream Start and 1x VOD)
-- 👍 a second internet can be added to make the Phone Connection more reliable
-- 👍 when switching from WiFi to Mobile and back stream is not going offline
-
-**Negatives**  
-
-- 👎 Additional monthly cost for Relay Server ($10 USD)
-- 👎 Additional monthly cost for 2nd Internet (Optional)
-- 👎 Takes some time for first Setup
 ---
 
 # 1 - Streaming Phone  
 
 > [!NOTE]   
-> If you have multiple phones, use the strongest/newest one as Streaming Phone
+> If you have multiple phones, please use the newest/best performing one as the Streaming Phone
 
 1.a - Follow this [Youtube Guide](https://www.youtube.com/watch?v=GbR0xfpJXJE) to install Moblin and set it up for direct Twitch Streaming _(as Backup)_
 
@@ -65,7 +46,7 @@ This Guide describes a **Cheap and Easy** Solution for
  - Fill out your Billing Info and setup your Payment Info *(Only Credit Card or Paypal supported)*
  - Alternatively you can also let your Viewers buy [Vouchers](https://shop.belabox.net/product/belabox-cloud-voucher) for multiple Months.
 
-2.c - Once you either sponsored or have a voucher open the [Belabox Cloud](https://cloud.belabox.net) Page and
+2.c - Once you either sponsored or have a voucher, open the [Belabox Cloud](https://cloud.belabox.net) Page and
  - Login/Authorize with your Github Account  
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/5385a7b6-e1c4-42ac-a5a1-729cf53dc732" height="600">
@@ -94,20 +75,20 @@ This Guide describes a **Cheap and Easy** Solution for
  - **Bitrate:** 4500 kbps  
  - **Codec:** HEVC(h2.65)
 
-3.d - Go back then **active Twitch** and tap on it to enter. Set your Twitch Name and Twitch ID. *(You can get the ID from [here](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/))*  
-3.e - Next we want to add our Alerts to Moblin. To do this we go to into our Alerts Dashboard via Browser  
+3.d - Go back and **toggle on Twitch** and tap on it to enter. Set your Twitch Name and Twitch ID. *(You can get the ID from [here](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/))*  
+3.e - Next you'll want to add your Alerts to Moblin. You will need to go into your Alerts Dashboard via a Web Browser  
  - [Streamlabs](https://streamlabs.com/dashboard#/alertbox) and copy the Widget URL
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/255e3ef7-cbd5-4cfa-84a8-17d68c78ccb6" height="600">
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/82365cc6-ade2-458f-b583-ccad4b0b62f1" height="600">
 
-3.f - Head back to Moblin and go to the **Settings** Screen. 
+3.f - Switch back to Moblin and go to the **Settings** Screen. 
  - Tap on **Scenes** then on **Widgets** then **Create**. 
  - Name it **Alerts**  
 
 3.g - Set type to **Browser**  
  - paste the Widget URL into **URL** Field.  
- - Set Width to 600 and Height to 400 *(you change size if the Alerts are wrong size)*  
+ - Set Width to 600 and Height to 400 *(change the size if the Alerts are wrong size)*  
 
 3.h - Go back to the **Scenes** Menu and tap on **My scene**   
  - Then tap **Add Widget** and choose the **Alert**-Widget we just created.
@@ -118,21 +99,18 @@ This Guide describes a **Cheap and Easy** Solution for
 
 ---
 # 4 - Mac-PC
-Any normal Mac or Macbook can be used, best cabled directly to your Home Internet Router.
- If you want to buy a new one just for this task, maybe look into Mini-Pc's.
+Any normal Mac or MacBook can be used (with hardware encoder/decoder for better stream performance), best cabled directly to your Home Internet Router.
 > [!WARNING]  
-> This PC needs to have a **STABLE** Internet Connection during the whole stream with at least 6Mbit Upload *[Speedtest](https://www.nperf.com)*
-
-> [!NOTE]  
-> The Pictures below are shown for Windows until replaced with MAC ones
-
+> This Mac needs to have a **STABLE** Internet Connection during the whole stream with at least 6Mbit Upload *[Speedtest](https://www.nperf.com)*
 
 ## 4.1 OBS
 > [!NOTE]  
-> This is the Programm that gets the Stream from the Relay Server and converts it back to old RTMP/h.264 Standards and streams it directly to Twitch. Here you have a lot of Options to set Videos, Text, Music to entertain your viewers while you reconnect
+> This is the Program that gets the Stream from the Relay Server and converts it back to old RTMP/h.264 Standards and streams it directly to Twitch. Here you have a lot of Options to set Videos, Text, Music to engage/entertain your viewers while you reconnect
 
 4.1.a - **Download [OBS Studio](https://obsproject.com/download)** for your System  
-4.1.b - **Install OBS** Studio and **Launch** it.  
+4.1.b - **Install OBS** Studio and **Launch** it.
+
+> [!NOTE]: Update the info to the Mac specific ones from: (https://techdump.murasama.net/2024/05/22/obs-studio-mac-installation-section/)
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/3555ea78-d6bd-440b-9bdc-15a91799f1a2" width="400">
 
@@ -198,7 +176,9 @@ Any normal Mac or Macbook can be used, best cabled directly to your Home Interne
 ---
 ## 4.2 NOALBS
 > [!NOTE]  
-> This is the Program controls OBS via Chat-Commands and automatically switches Scenes if Stream from the Phone is detected
+> This is the Program that samples your connections bitrate (via a stats process) and controls OBS via Chat-Commands and automatically switches Scenes if Stream from the Phone hits a configured low bitrate or lost connection.  The program is unsigned and and will display a Windows UAC dialog box about this.  Please run this program at your own risk (it is open source, used by many, and there have been no reports of any malware associated with it).
+>
+> Update this information with the Mac NOALBS info from here (important security related information): (https://techdump.murasama.net/2024/05/23/mac-noalbs-installation/)
 
 4.2.a - **Download [NOALBS](https://github.com/NOALBS/nginx-obs-automatic-low-bitrate-switching/releases)** for your System and unpack them to a location of your liking *(i recommend making a Stream and then a NOALBS Sub-Folder)*  
 4.2.b - Inside this Folder you should have these 4 files  
@@ -213,12 +193,11 @@ Just Download it from here again and place it in the same folder
 
 4.2.c - Open up a Terminal Window and enter command
 `cd /Users/`yourusername`/Documents/Stream/NOALBS`
-where **yourusername** = your username on the MAC and the Path to the folder, if you have a different one. Then hit **Enter**
+where **yourusername** = your username on the Mac and the Path to the folder, if you have a different one. Then hit **Enter**
 `mv env .env` and hit **Enter**
 env File should now vanish in Finder *(You can show it in Finder by pressing* **Command + Shift + .** *)*
 
-
-4.2.c - For NOALBS to respond to our Chat commands we need to give access to a Twitch Account. Once you logged in with your preferred Account in Twitch, click on this **[Link](https://b3ck.com/twitch/oauth)**, then hit **Authorize with Twitch** and copy the whole Code from the website
+4.2.c - For NOALBS to respond to our Chat commands, we need to give access to a Twitch Account (it is suggested to create an alt Twitch account and use that for the following; you can enable the creation of additional accounts from your Twitch Settings under Security and Privacy and toggling on "Enable additional account creation".  Make sure to /mod this account. Once you are logged in with your preferred Account in Twitch, click on this **[Link](https://b3ck.com/twitch/oauth)**, then hit **Authorize with Twitch** and copy the whole Code from the website
 
 <img src="https://github.com/user-attachments/assets/d668b651-5f7e-45b3-9e1a-e26eb5174b19" height="300">
 <img src="https://github.com/user-attachments/assets/44ca3f4b-4ea8-47a8-868e-180fc5c62ba7" height="130">
@@ -239,6 +218,7 @@ env File should now vanish in Finder *(You can show it in Finder by pressing* **
  - Scroll down to **NOALBSv2 configuration**
  - replace *REPLACE_BELLABOX_URL* with the URL from the Belabox Page
  - replace *REPLACE_BELLABOX_INGEST_KEY* with the last Part of the URL
+ - NOTE: make sure to keep your Websocket connection information safe (never share or reveal that info off/on stream)
 
 <img src="https://github.com/Naginreed/irl-cae-setup/assets/71943093/fe194e73-c223-4327-9680-af1b570869b1" height="350">
 
@@ -252,9 +232,9 @@ env File should now vanish in Finder *(You can show it in Finder by pressing* **
 
 4.2.i - Save and close the file. *Detailed Infos [NOALBS Github](https://github.com/NOALBS/nginx-obs-automatic-low-bitrate-switching)*  
 4.2.j - Start the **noalbs** programm. *There should be an error starting it the first time saying that the developer is not verified, just hit ok*  
-4.2.k - Make sure .sh files are **always opened** with the Terminal app. To do this Control Click the .sh File > Open with > Other. In the Menu by **Enable** choose **All Aplications** and check **Always open With** below. Then choose **Terminal** on the left side and hit **Open**
+4.2.k - Make sure .sh files are **always opened** with the Terminal app. To do this Control Click the .sh File > Open with > Other. In the Menu by **Enable** choose **All Applications** and check **Always open With** below. Then choose **Terminal** on the left side and hit **Open**
 
-4.2.l - Always run NOALBS over the launch.sh File. Check if it shows any Errors. Errors with Chat -> check .evn file. Errors with OBS -> check OBS Websocket or Websocket Settings in config.json  
+4.2.l - Always run NOALBS via the launch.sh file. Check if it shows any Errors. Errors with Chat -> check the .env file.  Errors with OBS -> check OBS Websocket or Websocket Settings in config.json  
 
 > [!NOTE]  
 > Opening the launch.sh in the Terminal app will always start up NOALBS from within the directory it is in.
@@ -264,8 +244,8 @@ env File should now vanish in Finder *(You can show it in Finder by pressing* **
 
 ---
 # 5 - Make OBS pretty
-We are finished with the basic Setup, but the Scenes are pretty emtpy.
-Following is an Explanation on what Scene is used for what and what People normally put in. 
+We are finished with the basic Setup, but the Scenes are basic placeholders.
+The following is an Explanation on what Scene is used for, and what People normally place in them.  
 > [!NOTE]  
 > Following are just recommendations. Feel free to design however you want.
 
@@ -284,26 +264,26 @@ Following is an Explanation on what Scene is used for what and what People norma
   
 **Brb**
 - When the connection to Phone is lost completely or you end the livestream in Moblin on purpose *(for privacy)*
-- old VODs or Clips are often used (For Clips i recommend a Folder named Clips and adding a VLC Media Source *requires [VLC Media Player](https://www.videolan.org/vlc/)*)
+- old VODs or Clips are often used (For Clips, the suggested recommendation is a Folder named Clips and adding a VLC Media Source *requires [VLC Media Player](https://www.videolan.org/vlc/)*)
 - simple Text "Be right back"
-- Can be switched to when you go to Toilet or have private Conversation for a few Minutes
+- Can be switched to when you go to the restroom or have private Conversation for a few Minutes
   
 **End**
-- Can be activated by writing !end in Twitch-Chat
+- Can be activated by typing !end in Twitch-Chat
 - Similar to Starting Video+Music
 - Simple Text "Ending Stream"
 
 ---
 # 6 - Normal Operation 
 > [!NOTE]  
-> Before **every** IRL-Stream you need to do the following
+> Before **every** IRL-Stream, you need to do the following
 
-6.a - **Start** your **PC** at Home an make sure it has a Internet Connection and that the PC doesn't turn off automatically  
-6.b - **Start OBS & NOALBS** on your PC  
+6.a - **Start** your **Mac** at Home an make sure it has a Internet Connection and that it doesn't turn off automatically  
+6.b - **Start OBS & NOALBS** on your Mac  
 6.c - **Go outside** to where you want to start your IRL-Stream  
 6.d - Enter `!start` in **Twitch-Chat** to start Stream to Twitch  
-6.e - **Go Live in IRL Pro** -> after a few seconds you are switched to **Live-Scene**  
-6.f - If you stop or loose connections on the Phone -> after a few seconds you are switched to **Brb-Scene**  
+6.e - **Go Live in Moblin** -> after a few seconds you are switched to **Live-Scene**  
+6.f - If you stop or lose connection on the Phone -> after a few seconds you are switched to **Brb-Scene**  
 6.g - As soon as connection from Phone to Internet is restored -> after a few seconds you are switched back to **Live-Scene**  
 6.h - End/Start the Livestream manually in Moblin to switch between `!brb` and `!live`  
 6.i - **Stop the Stream** automatically if you raid someone or with Chat command `!stop`  
@@ -324,9 +304,9 @@ Either a Mobile WiFi Router or a Second Phone with Mobile Hotspot active.
 > The 2nd Sim will also consume about ~50% of the overall Data
 
 ---
-# 8 - Stream directly to twitch  
+# 8 - Stream directly to Twitch  
 
-If for whatever reason the Relay or Home PC is not working you can easily switch back to direct Streaming in the Moblin App.  
+If for whatever reason the Relay or Home Mac is not working, you can easily switch back to direct Streaming in the Moblin App.  
 
 8.a - Got to **Settings** > **Streams** and Create  
 8.b - Tap on Twitch an follow the instructions  
@@ -336,7 +316,7 @@ If for whatever reason the Relay or Home PC is not working you can easily switch
  - **Bitrate:** 5800 kbps  
  - **Codec:** h.264
 
-8.d - Go back then **active Twitch** and tap on it to enter. Set your Twitch Name and Twitch ID. *(You can get the ID from [here](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/))*  
+8.d - Go back then **toggle on Twitch** and tap on it to enter. Set your Twitch Name and Twitch ID. *(You can get the ID from [here](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/))*  
 8.e - Go back to **Settings** > **Streams**. Deactivate Belabox and activate Twitch
 
 ---
@@ -346,7 +326,5 @@ Here is their [Discord](https://discord.gg/Tm6kf778)
 ### OBS 
 you can check their [Forum](https://obsproject.com/forum/) or just look up one of the hundreds of Youtube Tutorials
 ### NOALBS
-
-
 Here is the Guide on [Github](https://github.com/NOALBS/nginx-obs-automatic-low-bitrate-switching) and their [Discord](https://discord.gg/efWu5HWM2u)
 
